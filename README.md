@@ -248,7 +248,7 @@ $$
 where $i_1$ and $i_2$ correspond to latitudes $-40^\circ$ and $40^\circ$, respectively. Flattening the spatial dimensions yields
 
 $$
-x_{y,m} = \operatorname{vec}(X_{y,m}) \in \mathbb{R}^N, \qquad N = 30 \times 200 \times 240 = 1{,}440{,}000.
+x_{y,m} = \text{vec}(X_{y,m}) \in \mathbb{R}^N, \qquad N = 30 \times 200 \times 240 = 1{,}440{,}000.
 $$
 
 This reduces the per-field dimensionality by a factor of $\frac{6{,}019{,}200}{1{,}440{,}000} \approx 4.18$, resulting in a substantial reduction in memory usage and computational cost for all subsequent operations.
@@ -471,7 +471,7 @@ $$
 C = V \Lambda V^\top,
 $$
 
-where $\Lambda = \operatorname{diag}(\lambda_1, \dots, \lambda_{Y-2})$ with $\lambda_1 \geq \lambda_2 \geq \cdots \geq 0$, and the columns of $V \in \mathbb{R}^{(Y-2)\times(Y-2)}$ are orthonormal eigenvectors.
+where $\Lambda = \text{diag}(\lambda_1, \dots, \lambda_{Y-2})$ with $\lambda_1 \geq \lambda_2 \geq \cdots \geq 0$, and the columns of $V \in \mathbb{R}^{(Y-2)\times(Y-2)}$ are orthonormal eigenvectors.
 
 **Step 3: Recover the singular values**
 
